@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic|Merriweather:400,300,300italic,400italic,700,700italic);
+/*
+ Theme Name:   Margo Conner's Portfolio
+ Description:  My portfolio!
+ Author:       Margo Conner
+ Author URI:   http://www.margoconner.com
+ Template:     naked-wordpress-master
+ Version:      1.0.0
+*/
+
+/* styles
+-------------------------------------------------------------- */
+body,
+button,
+input,
+select {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+
+/* typography
+-------------------------------------------------------------- */
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h1 {
+  line-height: 71px;
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+h2 {
+  line-height: 50px;
+  font-size: 34px;
+  font-size: 3.4rem;
+}
+h3 {
+  line-height: 41px;
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+h4 {
+  line-height: 26px;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/* Header
+-------------------------------------------------------------- */
+.site-title a{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 36px;
+  text-align: left;
+  color: #565656;
+}
+.site-title a:hover{
+}
+.site-description{
+  font-style: italic;
+}
+header {
+  padding: 20px 0;
+  background: transparent;
+  margin: 20px auto;
+}
+header .gravatar {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0;
+  float: right;
+}
+header #brand {
+  margin:1em 0;
+}
+header #brand h1 {
+  font-weight: 300;
+  color: #565656;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+}
+header #brand h1 a {
+  color: #565656;
+  text-decoration: none;
+}
+header #brand h1 span {
+  font-weight: 300;
+  color: #888888;
+  text-transform: lowercase;
+}
+header nav {
+	float: right;
+}
+
+.menu-main-nav-container, .menu-main-container {
+  float: right;
+}
+
+.menu-header-container {
+	float: right;
+}
+
+header nav ul li {
+  float: left;
+  margin: 2px 20px 0 0;
+}
+
+header nav ul li a {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
