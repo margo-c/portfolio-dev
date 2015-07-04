@@ -6,10 +6,8 @@
 
     <div class="col-md-12 portfolio">
 
-      <h1><?php the_title(); ?></h1>
-      <h5>Made for: <?php the_field('made_for'); ?></h5>
-      <h5><?php the_tags(); ?></h5>
-      <h5><?php the_field('year'); ?></h5>
+      <h1>Work</h1>
+      <div class="piece-title"><em><?php the_title(); ?></em></div>
 
     </div>
 
@@ -24,8 +22,16 @@
         </div>
 
         <div class="col-md-10 col-md-offset-1 shrink">
+          <div class="col-md-3 piece-details">
+              <h5>What: <?php the_title(); ?></h5>
+              <h5>Made for: <?php the_field('made_for'); ?></h5>
+              <h5><?php the_tags(); ?></h5>
+              <h5>Made in: <?php the_field('year'); ?></h5>
+          </div>
+          <div class="col-md-9 piece-description">
           <?php the_content(); ?>
           <p><a class="btn btn-large btn-primary" href="<?php the_field('link'); ?>">View Final Piece <span class="glyphicon glyphicon-arrow-right"></span></a></p>
+        </div>
 
         </div>
 

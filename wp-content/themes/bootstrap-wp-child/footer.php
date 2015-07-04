@@ -1,8 +1,10 @@
-
-      <hr>
+</div>
+<div class="clear"></div>
 
       <footer>
-	    <div class="col-md-12">  	
+      	<div class="colorblock">
+      	<div class="container">
+	    <div class="col-md-12 bottom">  	
 	      <div class="row">	
 	        <div class="col-md-8">
 	        	<p style="font-size: 14px;">Why not get in touch? I'd love to hear from you! 
@@ -21,6 +23,8 @@
 	       <div class="clearfix"></div>
 	       	<p class="text-center">&copy; <?php echo date('Y'); ?>, pixels pushed and code written by <?php bloginfo('name'); ?></p>
 	   	 </div>
+	   	</div><!-- end container -->
+	   </div> <!-- end colorblock -->
       </footer>
     </div> <!-- /container -->
 

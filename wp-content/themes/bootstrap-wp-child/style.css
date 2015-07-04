@@ -16,6 +16,8 @@ body {
   line-height: 27px;
   font-size: 14px;
   padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #FAFAFA;
 }
 
 a {
@@ -96,24 +98,25 @@ hr {
 }
 
 .navbar-default {
-  background-color: #f7f7f7;
+  background-color: #A7C5BD;
   border-color: transparent;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.navbar-brand {
-  text-transform: uppercase;
-  font-weight: 100;
+.navbar-default .navbar-brand {
+  text-transform: none;
+  font-family: "Merriweather";
+  font-weight: 300;
   font-size: 30px;
   text-align: left;
-  color: #565656;
+  color: #fff;
   vertical-align: top;
   height: auto;
 }
 
-a.navbar-brand, .navbar-brand a:hover {
-  color: #565656;
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #fff;
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
@@ -131,9 +134,9 @@ a.navbar-brand, .navbar-brand a:hover {
   margin-right: 15px;
   top: 20px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
-  color: #777777;
+  color: #FFFFFF;
   -webkit-transition: color 0.25s ease-in-out;
   -moz-transition: color 0.25s ease-in-out;
   -o-transition: color 0.25s ease-in-out;
@@ -145,12 +148,13 @@ a.navbar-brand, .navbar-brand a:hover {
 .navbar-default .navbar-nav > li > a:focus {
   /*border-bottom: 2px solid rgba(100, 100, 100, 0.5);*/
   background-color: transparent;
-  color: rgba(100, 100, 100, 0.5);
+  color: rgba(82, 70, 86, .8); /* before, 100, 100, 100 */
 }
 
-.current-menu-item > a, .current-menu-parent > a {
+.navbar-default .navbar-nav .current_page_item > a, .navbar-default .navbar-nav .current-menu-parent > a {
   background: transparent;
-  border-bottom: 2px solid #565656;
+  color: rgba(82, 70, 86, .7);
+  border-bottom: 2px solid rgba(82, 70, 86, .8);
 }
 
 .page-header {
@@ -164,9 +168,21 @@ a.navbar-brand, .navbar-brand a:hover {
 
 /* Footer
 ------------------------------------------------------------- */
+.bottom {
+  background-color: #524656;
+}
+
+.colorblock {
+  width: 100%;
+  background-color: #524656;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
 footer {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  color: #fff;
 }
 
 .fa {
@@ -188,6 +204,28 @@ footer {
 
 /* Portfolio
 -------------------------------------------------------------- */
+.piece-details {
+  border-right: 1px solid gray;
+}
+
+.piece-description {
+  padding-left: 25px;
+}
+
+.piece-title {
+  font-family: "Merriweather", Georgia, sans-serif; 
+  font-weight: 200; 
+  font-size: 24px; 
+  padding-top: 10px; 
+  padding-bottom: 20px;
+  text-transform: none;
+}
+
+.piece-singleimage {
+  margin: 0 0 60px;
+  margin-top: 20px;
+}
+
 .portfolio-piece {
   margin-bottom: 30px;
 }
