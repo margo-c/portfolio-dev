@@ -84,6 +84,17 @@ hr {
   margin-bottom: 1.5em;
 }
 
+.lato {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.lato-small {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 /* Header
 ------------------------------------------------------------- */
 .logo {
@@ -185,6 +196,14 @@ footer {
   color: #fff;
 }
 
+.colorblock a,
+.colorblock a:visited,
+.colorblock a:active,
+.colorblock a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
 .fa {
   padding-left: 10px;
 }
@@ -204,8 +223,17 @@ footer {
 
 /* Portfolio
 -------------------------------------------------------------- */
+.notheader {
+  font-weight: 300;
+}
+
+#notheader1 {
+  margin-top: 0px;
+}
+
 .piece-details {
   border-right: 1px solid gray;
+  margin-top: 10px;
 }
 
 .piece-description {
@@ -272,6 +300,25 @@ footer {
   text-transform: uppercase;
   letter-spacing: .2em;
   margin-bottom: 20px;
+}
+
+.arrow-prev {
+  margin-left: 5px;
+}
+
+.arrow-next {
+  margin-right: 5px;
+}
+
+.arrow-center {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.prev-next {
+  font-size: 14px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 /* Sidebar

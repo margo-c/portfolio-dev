@@ -23,25 +23,28 @@
 
         <div class="col-md-10 col-md-offset-1 shrink">
           <div class="col-md-3 piece-details">
-              <h5>What: <?php the_title(); ?></h5>
-              <h5>Made for: <?php the_field('made_for'); ?></h5>
-              <h5><?php the_tags(); ?></h5>
-              <h5>Made in: <?php the_field('year'); ?></h5>
+              <h5 id="notheader1">What: <span class="notheader"><?php the_title(); ?></span></h5>
+              <h5>How: <span class="notheader"><?php the_field('how'); ?></span></h5>
+              <h5>Made for: <span class="notheader"><?php the_field('made_for'); ?></span></h5>
+              <?php echo get_the_tag_list('<h5>Tags:<span class="notheader"> ',', ','</span></h5>'); ?>
+              <h5>Made in: <span class="notheader"><?php the_field('year'); ?></span></h5>
           </div>
           <div class="col-md-9 piece-description">
           <?php the_content(); ?>
-          <p><a class="btn btn-large btn-primary" href="<?php the_field('link'); ?>">View Final Piece <span class="glyphicon glyphicon-arrow-right"></span></a></p>
+          <p><a class="btn btn-large btn-primary" href="<?php the_field('link'); ?>"><?php the_field('buttontext'); ?> <span class="glyphicon glyphicon-arrow-right"></span></a></p>
         </div>
 
         </div>
 
     </div>
 
-  <div class="col-md-3 col-md-offset-9 prev-next">
-    <?php next_post_link( '%link', '<span class="glyphicon glyphicon-circle-arrow-left"></span>' ); ?>
-    <a href="<?php bloginfo('url'); ?>/?p=68"><span class="glyphicon glyphicon-th"></span></a>
-    <?php previous_post_link( '%link', '<span class="glyphicon glyphicon-circle-arrow-right"></span>' ); ?>
+  <div class="col-md-4 col-md-offset-8 prev-next">
+    <?php next_post_link( '%link', '<span class="glyphicon glyphicon-arrow-left arrow-next"></span><span class="lato">Previous Piece</span>' ); ?>
+    <a href="<?php bloginfo('url'); ?>/?p=68"><span class="glyphicon glyphicon-th arrow-center"></span></a>
+    <?php previous_post_link( '%link', '<span class="lato">Next Piece</span><span class="glyphicon glyphicon-arrow-right arrow-prev"></span>' ); ?>
   </div>
+
+<div class="clearfix"></div>
 
 <!-- Most recent work -->
 
